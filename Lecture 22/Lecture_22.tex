@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{caption}
+
+\title{Simulated Experiment Report}
+\author{Insan Adhikari}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+In this fictional experiment, we studied the relationship between light intensity and distance from a source in a controlled environment. The experiment was set up using a single light bulb and a sensor that measured light intensity at various distances.
+
+\section{Data and Analysis}
+We recorded the intensity of light at different distances from the bulb. The data is shown in Table~\ref{tab:data}.
+
+\begin{table}[h]
+\centering
+\caption{Light intensity measurements at different distances}
+\label{tab:data}
+\begin{tabular}{|c|c|}
+\hline
+Distance (m) & Intensity (lux) \\
+\hline
+1.0 & 1000 \\
+2.0 & 250 \\
+3.0 & 111 \\
+4.0 & 62.5 \\
+\hline
+\end{tabular}
+\end{table}
+
+Using the inverse square law, we expect the intensity $I$ to follow the equation
+\begin{equation}
+I_d = \frac{L}{4\pi d^2}
+\label{eq:intensity}
+\end{equation}
+where $I_d$ is the intensity at distance $d$, $L$ is the luminosity of the source, and $\pi$ is the mathematical constant.
+
+\section{Results}
+We plotted the measured intensity against distance and compared it to the expected inverse square trend. Figure~\ref{fig:results} shows this comparison.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{result_plot.png}
+\caption{Measured light intensity vs. distance, with curve showing inverse square law prediction}
+\label{fig:results}
+\end{figure}
+
+The data closely follows the theoretical prediction, confirming the inverse square relationship.
+
+\section{Conclusions}
+This experiment demonstrated the inverse square law governing light intensity. The measurements and the curve in Figure~\ref{fig:results} agree with the model shown in Equation~\ref{eq:intensity}. This confirms the expected physical behavior of light propagation from a point source.
+
+\end{document}
